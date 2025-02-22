@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silletas Santa Elena S.A.S. - Silletas Personalizadas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: #F5F5DC; /* Blanco crema/beige */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #556B2F; /* Verde oliva oscuro */
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #2F4F4F; /* Verde oscuro */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: 400;
+        }
+        nav a:hover {
+            background-color: #6B8E23; /* Verde más claro */
+            border-radius: 5px;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background-image: url('ruta-a-imagen-hero-flores.jpg'); /* Reemplazar por imagen de silleta con flores */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+        .hero h2 {
+            font-size: 3em;
+            font-weight: 700;
+        }
+
+        /* Secciones */
+        section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: #F5F5DC; /* Blanco crema */
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #556B2F; /* Verde oliva */
+            font-weight: 700;
+        }
+        section p, section ul {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #333;
+        }
+        section ul {
+            list-style: none;
+            text-align: left;
+            display: inline-block;
+        }
+        section li {
+            margin-bottom: 10px;
+        }
+
+        /* Portafolio */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .portfolio img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botones */
+        .btn-primary {
+            background-color: #6B8E23; /* Verde oliva */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            background-color: #556B2F; /* Verde oliva oscuro */
+        }
+        .btn-secondary {
+            background-color: #666; /* Gris oscuro */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 400;
+            text-decoration: none;
+        }
+        .btn-secondary:hover {
+            background-color: #555; /* Gris más oscuro */
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #2F4F4F; /* Verde oscuro */
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <h1>Silletas Santa Elena S.A.S.</h1>
+        <p>Tradición y elegancia en cada silleta</p>
+    </header>
+
+    <!-- Navegación -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero" id="inicio">
+        <h2>Bienvenidos a Silletas Santa Elena</h2>
+    </div>
+
+    <!-- Contenido -->
+    <div class="container">
+        <!-- Sobre Nosotros -->
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Silletas Santa Elena S.A.S. es una empresa dedicada a la creación y venta de silletas personalizadas, manteniendo viva la tradición cultural de Medellín. Nuestro objetivo es llevar la belleza y el arte floral de nuestra región a cada rincón, ofreciendo productos únicos y de calidad.</p>
+        </section>
+
+        <!-- Portafolio -->
+        <section id="portafolio">
+            <h2>Portafolio</h2>
+            <div class="portfolio">
+                <!-- Reemplazar estas URLs con imágenes reales de silletas con flores -->
+                <img src="ruta-a-imagen-silleta-1.jpg" alt="Silleta Floral 1">
+                <img src="ruta-a-imagen-silleta-2.jpg" alt="Silleta Floral 2">
+                <img src="ruta-a-imagen-silleta-3.jpg" alt="Silleta Floral 3">
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li><strong>Silletas Comerciales:</strong> Venta de silletas personalizadas tanto en línea como en persona.</li>
+                <li><strong>Asesoría Personalizada:</strong> Te ayudamos a diseñar la silleta perfecta para cualquier ocasión.</li>
+                <li><strong>Charla Silletera en Finca:</strong> Experiencias culturales para grupos y eventos en nuestra finca.</li>
+            </ul>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p><strong>Dirección:</strong> Vereda Barro Blanco Cl 51 a 48 Este 278, Corregimiento de Santa Elena</p>
+            <p><strong>Móvil:</strong> 300 825 87 47</p>
+            <p><strong>Email:</strong> silletasantaelena@gmail.com</p>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Silletas Santa Elena S.A.S. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
