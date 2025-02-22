@@ -15,7 +15,7 @@
         body {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            background-color: #F5F5DC; /* Blanco crema/beige */
+            background-color: #F5F5DC; /* Blanco crema */
             color: #333;
         }
         .container {
@@ -26,7 +26,7 @@
 
         /* Encabezado */
         header {
-            background-color: #556B2F; /* Verde oliva oscuro */
+            background-color: #556B2F; /* Verde oscuro */
             color: white;
             text-align: center;
             padding: 30px 20px;
@@ -67,7 +67,7 @@
 
         /* Sección Hero */
         .hero {
-            background-image: url('ruta-a-imagen-hero-flores.jpg'); /* Reemplazar por imagen de silleta con flores */
+            background-image: url('https://pianteco.vtexassets.com/assets/vtex.file-manager-graphql/images/8c1a750e-acb7-4854-9999-1a9b5a0b3830___eb902d06f9479fa734becd84ec4f6eb4.png');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -92,7 +92,7 @@
         section h2 {
             font-size: 2em;
             margin-bottom: 20px;
-            color: #556B2F; /* Verde oliva */
+            color: #556B2F; /* Verde oscuro */
             font-weight: 700;
         }
         section p, section ul {
@@ -117,17 +117,28 @@
             gap: 20px;
             padding: 20px 0;
         }
+        .portfolio-item {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
         .portfolio img {
             width: 100%;
             height: 200px;
             object-fit: cover;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio p {
+            margin: 10px 0;
+            font-weight: 400;
+            color: #333;
         }
 
         /* Botones */
         .btn-primary {
-            background-color: #6B8E23; /* Verde oliva */
+            background-color: #6B8E23; /* Verde */
             color: white;
             padding: 10px 20px;
             border: none;
@@ -135,9 +146,10 @@
             cursor: pointer;
             font-weight: 400;
             text-decoration: none;
+            display: inline-block;
         }
         .btn-primary:hover {
-            background-color: #556B2F; /* Verde oliva oscuro */
+            background-color: #556B2F; /* Verde oscuro */
         }
         .btn-secondary {
             background-color: #666; /* Gris oscuro */
@@ -148,6 +160,7 @@
             cursor: pointer;
             font-weight: 400;
             text-decoration: none;
+            display: inline-block;
         }
         .btn-secondary:hover {
             background-color: #555; /* Gris más oscuro */
@@ -211,10 +224,24 @@
         <section id="portafolio">
             <h2>Portafolio</h2>
             <div class="portfolio">
-                <!-- Reemplazar estas URLs con imágenes reales de silletas con flores -->
-                <img src="ruta-a-imagen-silleta-1.jpg" alt="Silleta Floral 1">
-                <img src="ruta-a-imagen-silleta-2.jpg" alt="Silleta Floral 2">
-                <img src="ruta-a-imagen-silleta-3.jpg" alt="Silleta Floral 3">
+                <div class="portfolio-item">
+                    <img src="https://pianteco.vtexassets.com/arquivos/ids/157731-1200-auto?v=638741985631370000&width=1200&height=auto&aspect=true" alt="Silleta Floral Tradicional">
+                    <p>Silleta Floral Tradicional</p>
+                    <a href="#" class="btn-primary">Agregar al carrito</a>
+                    <a href="#" class="btn-secondary">Comprar ahora</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://pianteco.vtexassets.com/arquivos/ids/157731-1200-auto?v=638741985631370000&width=1200&height=auto&aspect=true" alt="Silleta Floral Moderna">
+                    <p>Silleta Floral Moderna</p>
+                    <a href="#" class="btn-primary">Agregar al carrito</a>
+                    <a href="#" class="btn-secondary">Comprar ahora</a>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://pianteco.vtexassets.com/arquivos/ids/157731-1200-auto?v=638741985631370000&width=1200&height=auto&aspect=true" alt="Silleta Floral Premium">
+                    <p>Silleta Floral Premium</p>
+                    <a href="#" class="btn-primary">Agregar al carrito</a>
+                    <a href="#" class="btn-secondary">Comprar ahora</a>
+                </div>
             </div>
         </section>
 
